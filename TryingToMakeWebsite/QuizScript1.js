@@ -100,7 +100,6 @@ function submitQuiz() {
   }
 
   // print correct answers only if wrong (calls correctAnswer function)
-
   solveQ1();
   solveQ2();
   
@@ -127,11 +126,20 @@ function submitQuiz() {
   };
   if (calcScore >= 8)
   {
-    
+    showStrength();
   }
   document.getElementById('userScore').innerHTML = showScore;
 }
-
+function hideStrength()
+{
+  document.getElementById("strengthButton").style.visibility = "hidden";
+  document.getElementById("moveOn").style.visibility = "hidden";
+}
+function showStrength()
+{
+  document.getElementById("strengthButton").style.visibility = "visible";
+  document.getElementById("moveOn").style.visibility = "visible";
+}
 $(document).ready(function () {
 
   $('#submitButton').click(function () {
