@@ -1,9 +1,9 @@
-﻿<header>
+<header>
   <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
   <script type="text/javascript" src="jquery-1.8.3.js"></script>
   <script src="QuizScript1.js"></script>
 </header>
-<body>
+<body onload='hideStrength()'>
 <h2 class="quizHeader">Lower Body Strength and Flexibility Quiz</h2>
 <h3 class="quizDescription">This quiz is designed to determine your current level of lower body strength and overall lower body flexibility.
     Stretches and strengthening exercises will be suggested based on your results.</h3>
@@ -102,16 +102,23 @@
            type="submit" value="Submit" />
   </div>
 
-  <!--show only wrong answers on submit-->
+  
+
+<!--show only wrong answers on submit-->
   <div class="quizAnswers" id="correctAnswer1"></div>
   <div class="quizAnswers" id="correctAnswer2"></div>
   <div class="quizAnswers" id="correctAnswer3"></div>
   <div class="quizAnswers" id="correctAnswer4"></div>
 
   <!--show score upon submit-->
-  <div>
-    <h2 class="quizScore" id="userScore"></h2>
-  </div>
+<div>
+  <h2 class="quizScore" id="userScore"></h2>
+</div>
 
+<h3 class="moveOn" id="moveOn">Based on your flexibility score, you can add strengthening exercises to your workout.</h3>
+<div class="strengthButton">
+  <input class="quizSubmit" id="strengthButton" onClick="location.href = 'C:/Users/1021528/Desktop/TryingToMakeWebsite/MainMenu.html'"
+         type="submit" value="Strength"/>
+</div>
 
 </body>
