@@ -1,0 +1,124 @@
+<header>
+  <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+  <script type="text/javascript" src="jquery-1.8.3.js"></script>
+  <script src="QuizScript1.js"></script>
+</header>
+<body onload='hideStrength()'>
+<h2 class="quizHeader">Lower Body Strength and Flexibility Quiz</h2>
+<h3 class="quizDescription">This quiz is designed to determine your current level of lower body strength and overall lower body flexibility.
+    Stretches and strengthening exercises will be suggested based on your results.</h3>
+
+  <table style="width:583px">
+    <tr>
+      <td>
+        <div>
+          <p class="question">1. Stand with your feet together and attempt to bend and touch your toes.</p>
+
+          <ul>
+            <input class="answer" type="radio" name="q1" value="3">
+            <label id="correctString1">I can easily reach the ground.</label>
+            <br>
+            <input class="answer" type="radio" name="q1" value="2">
+            <label>I can comfortably touch my toes.</label>
+            <br>
+            <input class="answer" type="radio" name="q1" value="1">
+            <label>I can touch my toes if I reallllly try.</label>
+            <br>
+            <input class="answer" type="radio" name="q1" value="0">
+            <label>I cannot touch my toes.</label>
+          </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          <p class="question">2. Following the picture, while keeping one leg straight on the floor, pull the other leg towards the opposite shoulder.</p>
+          <img src="hipflexor.png" alt="Hip flexor" style="width:300px;height:130px;">
+          <ul>
+            <input class="answer" type="radio" name="q2" value="3">
+            <label>My knee easily touches my chest while keeping my back flat on the floor.</label>
+            <br>
+            <input class="answer" type="radio" name="q2" value="2">
+            <label id="correctString2">I can touch my chest, but there's a little bit of effort/strain required.</label>
+            <br>
+            <input class="answer" type="radio" name="q2" value="1">
+            <label>I can only touch my knee to my chest if my back is lifted of the floor. I feel a strain when doing this.</label>
+            <br>
+            <input class="answer" type="radio" name="q2" value="0">
+            <label>I can't touch my knee to my chest.</label>
+          </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          <p class="question">3. Using the picture as a guide. Lie with one leg bent and, keeping it straight,
+            slowly raise your other leg until it is even with your bent knee. Slowly return it to the floor, still keeping it straight.
+          Repeat 25 times.</p>
+          <img src="frontLegLift.jpg" alt="Hip flexor" style="width:270px;height:130px;">
+          <ul>
+            <input class="answer" type="radio" name="q3" value="3">
+            <label>Wow. That was easy. I could've easily done 50.</label>
+            <br>
+            <input class="answer" type="radio" name="q3" value="2">
+            <label id="correctString3">I finished the 25 and could do another set after some rest.</label>
+            <br>
+            <input class="answer" type="radio" name="q3" value="1">
+            <label>One set was okay, but I'm not sure I could complete a second set.</label>
+            <br>
+            <input class="answer" type="radio" name="q3" value="0">
+            <label>I struggled to/did not finish the 25 reps.</label>
+          </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          <p class="question">4. Quiz question #4</p>
+
+          <ul>
+            <input class="answer" type="radio" name="q4" value="3">
+            <label>wrong answer</label>
+            <br>
+            <input class="answer" type="radio" name="q4" value="2">
+            <label id="correctString4">correct answer 4</label>
+            <br>
+            <input class="answer" type="radio" name="q4" value="1">
+            <label>wrong answer</label>
+            <br>
+            <input class="answer" type="radio" name="q4" value="0">
+            <label>wrong answer</label>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <br />
+  <div class="submitter">
+    <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+           type="submit" value="Submit" />
+  </div>
+
+  
+
+<!--show only wrong answers on submit-->
+  <div class="quizAnswers" id="correctAnswer1"></div>
+  <div class="quizAnswers" id="correctAnswer2"></div>
+  <div class="quizAnswers" id="correctAnswer3"></div>
+  <div class="quizAnswers" id="correctAnswer4"></div>
+
+  <!--show score upon submit-->
+<div>
+  <h2 class="quizScore" id="userScore"></h2>
+</div>
+
+<h3 class="moveOn" id="moveOn">Based on your flexibility score, you can add strengthening exercises to your workout.</h3>
+<div class="strengthButton">
+  <input class="quizSubmit" id="strengthButton" onClick="location.href = 'C:/Users/1021528/Desktop/TryingToMakeWebsite/MainMenu.html'"
+         type="submit" value="Strength"/>
+</div>
+
+</body>
