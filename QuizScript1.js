@@ -60,6 +60,48 @@ function submitQuiz() {
     img.src = 'hipflexor2.jpg';
   }
 
+  function hipflexor3() {
+    var img = new Image();
+    var div = document.getElementById('correctAnswer3');
+    img.onload = function () {
+      div.appendChild(img);
+    };
+    img.src = 'FrontHip.jpg';
+  }
+
+  function hipflexor4() {
+    var img = new Image();
+    var div = document.getElementById('correctAnswer3');
+    img.onload = function () {
+      div.appendChild(img);
+    };
+    img.src = 'FrontHipKnee.jpg';
+  }
+
+  function calf1() {
+    var img = new Image();
+    var div = document.getElementById('correctAnswer4');
+    img.onload = function () {
+      div.appendChild(img);
+    };
+    img.src = 'calf1.jpg';
+  }
+
+  function calf2() {
+    var img = new Image();
+    var div = document.getElementById('correctAnswer4');
+    img.onload = function () {
+      div.appendChild(img);
+    };
+    img.src = 'calf2.jpg';
+  }
+
+
+
+
+
+
+
   function solveQ1()
   {
     if (answerScore('q1') === 3) {
@@ -99,16 +141,52 @@ function submitQuiz() {
     }
   }
 
+  function solveQ3() {
+    if (answerScore('q3') === 3) {
+      document.getElementById('correctAnswer3').innerHTML = correctAnswer('You do not need to add additional quad stretches to your routine', 3);
+    }
+    else if (answerScore('q3') === 2) {
+      document.getElementById('correctAnswer3').innerHTML = correctAnswer('Do this stretch everyday. Hold 3x20 seconds each leg.', 3);
+      hipflexor3();
+    }
+    else if (answerScore('q3') === 1) {
+      document.getElementById('correctAnswer3').innerHTML = correctAnswer('Add these exercises to your daily routine. 3x20sec hold each leg for each exercise.', 3);
+      hipflexor3();
+      hipflexor4();
+    } else {
+      document.getElementById('correctAnswer3').innerHTML = correctAnswer('Add these exercises to your daily routine. 5x20sec hold each leg for each exercise.', 3);
+      hipflexor3();
+      hipflexor4();
+    }
+  }
+
+  function solveQ4() {
+    if (answerScore('q4') === 3) {
+      document.getElementById('correctAnswer4').innerHTML = correctAnswer('You do not need to add additional calf stretches to your routine', 4);
+    }
+    else if (answerScore('q4') === 2) {
+      document.getElementById('correctAnswer4').innerHTML = correctAnswer('Do this stretch everyday. Hold 3x20 seconds each leg.', 4);
+      calf1();
+    }
+    else if (answerScore('q4') === 1) {
+      document.getElementById('correctAnswer4').innerHTML = correctAnswer('Add these exercises to your daily routine. 3x20sec hold each leg for each exercise.', 4);
+      calf1();
+      calf2();
+    } else {
+      document.getElementById('correctAnswer4').innerHTML = correctAnswer('Add these exercises to your daily routine. 5x20sec hold each leg for each exercise.', 4);
+      calf1();
+      calf2();
+    }
+  }
+
+
   // print correct answers only if wrong (calls correctAnswer function)
   solveQ1();
   solveQ2();
-  
-  if (answerScore('q3') === 0) {
-    document.getElementById('correctAnswer3').innerHTML = correctAnswer('correctString3', 3);
-  }
-  if (answerScore('q4') === 0) {
-    document.getElementById('correctAnswer4').innerHTML = correctAnswer('correctString4', 4);
-  }
+  solveQ3();
+  solveQ4();
+
+
 
   // calculate "possible score" integer
   var questionCountArray = document.getElementsByClassName('question');

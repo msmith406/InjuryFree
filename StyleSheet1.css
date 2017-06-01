@@ -35,6 +35,11 @@ h2.quizScore{
 	font-size:25px;
 }
 
+h3.moveOn{
+	font-family: Arial, sans-serif;
+	font-size:18px;
+}
+
 div.quizAnswers{
 	font-family: Arial, sans-serif;
 	font-size:16px;
