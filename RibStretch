@@ -1,9 +1,0 @@
-<header>
-  <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
-  <script type="text/javascript" src="jquery-1.8.3.js"></script>
-  <script src="QuizScript1.js"></script>
-</header>
-<h2 class="quizHeader">Lower Body Strength and Flexibility Quiz</h2>
-<h3 class="quizDescription">This quiz is designed to determine your current level of lower body strength and overall lower body flexibility.
-    Stretches and strengthening exercises will be suggested based on your results.</h3>
-
