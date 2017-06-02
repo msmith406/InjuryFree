@@ -1,13 +1,266 @@
-<header>
-  <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
-  <script type="text/javascript" src="jquery-1.8.3.js"></script>
-  <script src="QuizScript1.js"></script>
-</header>
-<h2 class="quizHeader">Rib Strength and Flexibility Quiz</h2>
-<h3 class="quizDescription">This quiz is designed to determine your current level of rib strength and overall flexibility.
-    Stretches and strengthening exercises will be suggested based on your results.</h3>
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  </head>
+ 
+
+<h2 class="quizHeader">Rib Strength and Flexibility</h2>
+
 <div class="submitter">
   <input class="quizSubmit" id="submitButton" onClick="location.href = 'index.html'"
-         type="submit" value="Back"/>
+         type="submit" value="Back" />
 </div>
+<body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<h3>Flexibility</h3>
+
+<ul class="collapsible" data-collapsible="accordion">
+  <li>
+    <div class="collapsible-header">
+      Upper Trapezius
+    </div>
+    <div class="collapsible-body">
+      <span>Seated in a chair, reach with opposite hand of
+            “trapezius” muscle being stretched and place on
+            head. The hand of the side being stretched should
+            be placed underneath the chair for leverage.
+            Gently pull head to side. Stretch should be felt
+            through your neck and trapezius muscle. Change
+            position of head (forward or back) to feel different
+            muscle fibers. Hold for 20 sec. Repeat 3-5 times.
+            Switch side for balance.<br/><br/>
+        <img src="upperTrapezius.png" alt="Hip flexor" style="width:600px;height:250px;">
+      </span>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      Sleeper Stretch for Posterior RC
+    </div>
+    <div class="collapsible-body"><span>
+        Sidelying, rest your chin on the
+        shoulder that is being stretched.
+        Make sure shoulder angle and arm
+        are at 90 degrees. Opposite hand
+        pushes arm being stretched, down
+        towards the table. Stretch should be
+        felt in the back of the shoulder. This is
+        more of a dynamic stretch, therefore
+        only needs to be held for 2-3 sec
+        when end range is achieved. Switch
+        side for balance. Complete 15 times. <br /><br />
+      <img src="sleeperPosteriorRC.png" alt="Hip flexor" style="width:650px;height:200px;">
+    </span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      Posterior Deltoid
+    </div>
+    <div class="collapsible-body"><span>
+      Stand on one side of a wall and place
+      the arm that is being stretched across
+      your body. Grip onto the side of the
+      wall, and look slightly away towards the
+      side being stretched. Stretch should be
+      felt behind the shoulder and scapula
+      (shoulder blade). Hold for 20-30 sec.
+      Repeat 3-5 times. Switch side for
+      balance. <br /><br />
+    <img src="posteriorDeltoid.png" alt="Hip flexor" style="width:700px;height:200px;">
+   </span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+     Single Arm Anterior Chest using doorway
+    </div>
+    <div class="collapsible-body"><span>
+      Stand on one side of a wall with hand/forearm resting on the wall.
+      Make sure to keep your shoulders down (keep shoulders away from
+      ear). Step with the opposite foot forward, stretch should be felt on the
+      one side of the pectoral group muscle. Hold for 30 seconds. Repeat
+      3-5 times. Switch side for balance.<br /><br />
+     <img src="singleArmChestDoorway.png" alt="Hip flexor" style="width:300px;height:225px;">
+    </span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      Anterior Chest using foam roller (Static and Dynamic)
+    </div>
+    <div class="collapsible-body"><span>
+      Lie on the foam roller (with the roller along your spine), and open up
+      your chest by placing arms at your side making sure they are at 90
+      degrees. For the static stretch, hold position for up to 1-2 min. For
+      the dynamic stretch, raise arms above your head trying to keep arms
+      parallel with the ground and return to 90 degrees. Repeat 10-15 times. <br /><br />
+     <img src="foamRollerStatic.png" alt="Hip flexor" style="width: 450px; height: 225px;">
+     <img src="foamRollerDynamic.png" alt="Hip flexor" style="width: 450px; height: 225px;">
+    </span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+     Wall Slides (Alternating arm lift)
+    </div>
+    <div class="collapsible-body"><span>
+      In a seated position, place your back and
+      shoulder blades flat against the wall. Make sure
+      not to arch your lower back in order for shoulder
+      blades to come in contact with the wall. Tightening
+      your core will help flatten your lower back as well.
+      Alternate lifting right or left arm above your head,
+      followed by the opposite arm, while keeping your
+      shoulder blades against wall. Repeat 10-15 times
+      each arm. <br /><br />
+      <img src="wallSlides1.png" alt="Hip flexor" style="width: 550px; height: 225px;">
+     </span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      Wall Slides (90/90) 
+    </div>
+    <div class="collapsible-body"><span>
+      In a seated position, place your back and
+      shoulder blades flat against the wall with your
+      arms/shoulders at 90 degrees. Slide your arms
+      up the wall until arms have straightened while
+      keeping your shoulder blades in contact with the
+      wall the entire time. Return to the 90/90 degree
+      position, and repeat 10-15 times. <br /><br />
+    <img src="wallSlides2.png" alt="Hip flexor" style="width: 550px; height: 225px;">
+   </span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      Seated Trunk Sidebending on Physioball
+    </div>
+    <div class="collapsible-body"><span>
+      Seated on Physioball, make sure you are sitting upright and core
+      is engaged for proper alignment. Place the hand of the side being
+      stretched on your head and slightly lean away. Stretch should be felt
+      along rib cage and latissimus muscle. Hold for 20-30 sec. Repeat 3-5
+      times. Switch side for balance.<br /><br />
+     <img src="seatedTrunkBall.png" alt="Hip flexor" style="width: 400px; height: 225px;">
+    </span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+     Latissimus/Trunk Sidebending on Physioball 
+    </div>
+    <div class="collapsible-body"><span>
+      While standing, face the Physioball and place
+      elbow with arm bent on the ball. Allow the ball to
+      guide you into the stretch. Stretch should be felt
+      in Latissimus muscle. Another option is placing
+      elbow on the Physioball while standing and facing
+      sideways. Lean into the ball to feel a deeper
+      stretch. Hold for 20-30 sec. Repeat 3-5 times.
+      Switch side for balance.<br /><br />
+      <img src="latBall.png" alt="Hip flexor" style="width: 650px; height: 225px;">
+</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      Prayer Stretch on Physioball using Table
+    </div>
+    <div class="collapsible-body"><span>
+      In a standing position, place both hands on the Physioball. Lean into
+      the Physioball with your arms, and allow it to guide you forward. Once
+      you get to the end range, hold for 2-3sec, and repeat 10-15 times.
+      Stretch should be felt in your latissiumus muscles.<br /><br />
+      <img src="prayerStretch.png" alt="Hip flexor" style="width: 550px; height: 225px;">
+</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+     Prone Press Ups
+    </div>
+    <div class="collapsible-body"><span>
+        Start lying face down, with elbows bent and hands on table. Push your
+        upper body into an extended position and hold for 2-3 sec. Be sure to
+        keep the front of your hip bones in contact with the table during the
+        entire movement. If your hip bones have come off the table, this means
+        you are extending too far. Repeat 10 – 15 times. <br /><br />
+      <img src="pronePressUp.png" alt="Hip flexor" style="width: 550px; height: 200px;">
+      </span></div>
+  </li>
+</ul>
+<h3>Strength</h3>
+   
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header">
+                Seated Scapular Retraction/Protraction Slides on Table
+              </div>
+              <div class="collapsible-body"><span>
+                Start by siting in a chair in an upright position working on good posture.
+                The side of the arm doing the exercise should be placed on the table.
+                Slide your arm forward by using the muscles near your shoulder blade.
+                The shoulder blade should open which is called “scapular protraction”.
+                This should be followed by sliding your arm back, as if you would be
+                squeezing your shoulder blades together, but isolating one side at a
+                time. This is called “scapular retraction”. Repeat 2 -3 sets of 15-20
+                times on each side.<br /><br />
+                <img src="seatedScapularRetPro.png" alt="Hip flexor" style="width: 500px; height: 200px;">
+              </span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                Single Arm Prone Scapular Retraction, add weight as needed
+              </div>
+              <div class="collapsible-body"><span>
+                Start by lying down on the end of a table. Use a lighter dumbbell weight
+                to start and progress as needed. The first part of the exercise is working
+                on “scapular retraction”. While keeping your arm and elbow straight,
+                contract the muscles surrounding the shoulder blade in order for the
+                shoulder blade to slide towards the spine. Be sure not to “hike” your
+                shoulders during exercise. Repeat 2 x 15-20 times. For the second part
+                of the exercise, try holding the “scapular retraction” while doing a row.
+                Repeat 2 x 15-20 times. Switch side for balance.<br /><br />
+                <img src="singleArmProne.png" alt="Hip flexor" style="width: 500px; height: 200px;">
+                </span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                Prone I’s, T’s, and Y’s, add weight as needed
+              </div>
+              <div class="collapsible-body"><span>
+                Start by lying face down on a table. Use a rolled up towel and place
+                it under forehead to help relax the neck muscles. The first exercise is
+                called “I’s”. Arms are placed at your side, and squeeze your shoulder
+                blades together. The second exercise is called “T’s”. Place your arms out
+                at your side to form a “T” with palms down then squeeze your shoulder
+                blades together. This exercise can also be done with thumbs pointing
+                upward. The third exercise is called “Y’s”. Place your arms above your
+                head to form a “Y” with palms facing down and squeeze shoulder
+                blades together. This exercise can also be done with thumbs pointing
+                upward. Each exercise can be done 2 x 15-20 times..<br /><br />
+                <img src="ProneI.png" alt="Hip flexor" style="width: 375px; height: 175px;">
+                <img src="ProneT.png" alt="Hip flexor" style="width: 375px; height: 175px;">
+                <img src="ProneY.png" alt="Hip flexor" style="width: 375px; height: 175px;">
+                </span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                Supine Punch Ups with weight (front view) 
+              </div>
+              <div class="collapsible-body"><span>
+                  Lie on table facing up. Start with lighter dumbbell weights in each hand,
+                  and progress as needed. Arms should be straight, shoulder width apart,
+                  while holding the weights. Start with shoulder blades touching the table
+                  then simultaneously punch up towards the ceiling so the shoulder
+                  blades separate instead of squeezing together. At the end range of the
+                  exercise, there should be space between the back of your shoulder and
+                  the table. Exercise should end with shoulders touching the table again.
+                  Repeat 2 x 15-20 times.<br /><br />
+                  <img src="punchUp.png" alt="Hip flexor" style="width: 425px; height: 175px;">
+                  <img src="punchUpSide.png" alt="Hip flexor" style="width: 425px; height: 175px;">
+                </span></div>
+            </li>
+          </ul>
+
+</body>
+</html>
