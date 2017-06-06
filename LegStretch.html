@@ -4,7 +4,12 @@
   <script type="text/javascript" src="jquery-1.8.3.js"></script>
   <script src="QuizScript1.js"></script>
   <title>Leg & Hip Exercises</title>
-
+  <style>
+    .indented {
+      padding-left: 1rem;
+      padding-bottom: 2rem;
+    }
+  </style>
 </head>
 <body onload='hideStrength()'>
   <div class="card-panel teal lighten-3">
@@ -24,19 +29,19 @@
           <p>
             <form action="#">
           <p>
-            <input class="with-gap" name="group1" type="radio" id="correctString1" />
+            <input class="with-gap" name="q1" type="radio" id="correctString1" value ="3" />
             <label for="correctString1">I can easily reach the ground.</label>
           </p>
           <p>
-            <input class="with-gap" name="group1" type="radio" id="test2" />
+            <input class="with-gap" name="q1" type="radio" id="test2" value="2" />
             <label for="test2">I can comfortably touch my toes.</label>
           </p>
           <p>
-            <input class="with-gap" name="group1" type="radio" id="test3" />
+            <input class="with-gap" name="q1" type="radio" id="test3" value="1" />
             <label for="test3">I can touch my toes if I reallllly try.</label>
           </p>
           <p>
-            <input class="with-gap" name="group1" type="radio" id="test4" />
+            <input class="with-gap" name="q1" type="radio" id="test4" value="0" />
             <label for="test4">I cannot touch my toes.</label>
           </p>
           </form>
@@ -58,19 +63,19 @@
             <img src="hipflexor.png" alt="Hip flexor" style="width: 300px; height: 130px;"><br /><br />
             <form action="#">
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test5" />
+            <input class="with-gap" name="q2" type="radio" id="test5" value="3"/>
             <label for="test5">My knee easily touches my chest while keeping my back flat on the floor.</label>
           </p>
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test6" />
+            <input class="with-gap" name="q2" type="radio" id="test6" value="2"/>
             <label for="test6">I can touch my chest, but there's a little bit of effort/strain required.</label>
           </p>
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test7" />
+            <input class="with-gap" name="q2" type="radio" id="test7" value="1"/>
             <label for="test7">I can only touch my knee to my chest if my back is lifted of the floor. </label>
           </p>
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test8" />
+            <input class="with-gap" name="q2" type="radio" id="test8" value="0"/>
             <label for="test8">I can't touch my knee to my chest.</label>
           </p>
           </form>
@@ -93,19 +98,19 @@
             <img src="FrontHip.jpg" alt="Hip flexor" style="width: 300px; height: 130px;"><br /><br />
             <form action="#">
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test9" />
+            <input class="with-gap" name="q3" type="radio" id="test9" value="3"/>
             <label for="test9">That was easy. I effortlessly can hold my foot against my butt with no pain.</label>
           </p>
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test10" />
+            <input class="with-gap" name="q3" type="radio" id="test10" value="2"/>
             <label for="test10">I can reach my butt fairly comfortably.</label>
           </p>
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test11" />
+            <input class="with-gap" name="q3" type="radio" id="test11" value="1"/>
             <label for="test11">I can reach my butt with my foot, but with some discomfort. </label>
           </p>
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test12" />
+            <input class="with-gap" name="q3" type="radio" id="test12" value="0"/>
             <label for="test12">I cannot reach my butt due to strain, pain , or discomfort.</label>
           </p>
           </form>
@@ -126,19 +131,19 @@
             <img src="CalfTest.jpg" alt="Hip flexor" style="width: 300px; height: 130px;"><br /><br />
             <form action="#">
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test13" />
+            <input class="with-gap" name="q4" type="radio" id="test13" value="3"/>
             <label for="test13">The heel closer to the wall stays on the ground. I don't even feel a stretch.</label>
           </p>
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test14" />
+            <input class="with-gap" name="q4" type="radio" id="test14" value="2"/>
             <label for="test14">I can keep my heel (closer to the wall) on the ground. I feel a stretch.</label>
           </p>
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test15" />
+            <input class="with-gap" name="q4" type="radio" id="test15" value="1"/>
             <label for="test15">I can almost keep my heel (closer to the wall) on the ground. </label>
           </p>
           <p>
-            <input class="with-gap" name="group2" type="radio" id="test16" />
+            <input class="with-gap" name="q4" type="radio" id="test16" value="0"/>
             <label for="test16">I can't keep my heel (closer to the wall) on the ground. At all.</label>
           </p>
           </form>
@@ -149,119 +154,43 @@
   </div>
 
 
-  <!--<table style="width:583px">-->
-  <!--<tr>
-    <td>
-      <div>
-        <p class="question">1. Stand with your feet together and attempt to bend and touch your toes.</p>
 
+  <div class="indented">
+    <a class="waves-effect waves-light btn">
+      <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+             type="submit" value="Submit" />
+    </a>
 
-        <input class="answer" type="radio" name="q1" value="3">
-        <label id="correctString1">I can easily reach the ground.</label>
-        <br>
-        <input class="answer" type="radio" name="q1" value="2">
-        <label>I can comfortably touch my toes.</label>
-        <br>
-        <input class="answer" type="radio" name="q1" value="1">
-        <label>I can touch my toes if I reallllly try.</label>
-        <br>
-        <input class="answer" type="radio" name="q1" value="0">
-        <label>I cannot touch my toes.</label>
+    <div>
 
+      <!--show only wrong answers on submit-->
+      <div><br/>
       </div>
-    </td>
-  </tr>-->
-  <!--<tr>
-    <td>
-      <div>
-        <p class="question">2. Following the picture, while keeping one leg straight on the floor, pull the other leg towards the opposite shoulder.</p>
-        <img src="hipflexor.png" alt="Hip flexor" style="width:300px;height:130px;">
-        <ul>
-          <input class="answer" type="radio" name="q2" value="3">
-          <label>My knee easily touches my chest while keeping my back flat on the floor.</label>
-          <br>
-          <input class="answer" type="radio" name="q2" value="2">
-          <label id="correctString2">I can touch my chest, but there's a little bit of effort/strain required.</label>
-          <br>
-          <input class="answer" type="radio" name="q2" value="1">
-          <label>I can only touch my knee to my chest if my back is lifted of the floor. I feel a strain when doing this.</label>
-          <br>
-          <input class="answer" type="radio" name="q2" value="0">
-          <label>I can't touch my knee to my chest.</label>
-        </ul>
+      <div class="quizAnswers" id="correctAnswer1"></div>
+      <div><br/>
       </div>
-    </td>
-  </tr>-->
-  <!--<tr>
-    <td>
-      <div>
-        <p class="question">3. Using the picture as a guide, pull the leg being stretched towards your butt. Stop if you feel any pain or discomfort.</p>
-        <img src="FrontHip.jpg" alt="Hip flexor" style="width:270px;height:130px;">
-        <ul>
-          <input class="answer" type="radio" name="q3" value="3">
-          <label>Wow. That was easy. I effortlessly can hold my foot against my butt with no pain or discomfort.</label>
-          <br>
-          <input class="answer" type="radio" name="q3" value="2">
-          <label id="correctString3">I can reach my butt fairly comfortably.</label>
-          <br>
-          <input class="answer" type="radio" name="q3" value="1">
-          <label>I can reach my butt with my foot, but with some discomfort.</label>
-          <br>
-          <input class="answer" type="radio" name="q3" value="0">
-          <label>I cannot reach my butt due to strain, pain , or discomfort.</label>
-        </ul>
+      <div class="quizAnswers" id="correctAnswer2"></div>
+      <div><br/><br/>
       </div>
-    </td>
-  </tr>-->
-  <!--<tr>
-    <td>
-      <div>
-        <p class="question">4. Perform the exercise shown in the picture below.</p>
-        <img src="CalfTest.jpg" alt="Hip flexor" style="width:270px;height:130px;">
-        <ul>
-          <input class="answer" type="radio" name="q4" value="3">
-          <label>The heel of my foot closer to the wall stays on the ground. I don't even feel a stretch.</label>
-          <br>
-          <input class="answer" type="radio" name="q4" value="2">
-          <label id="correctString4">I can keep my heel (closer to the wall) on the ground. I feel a stretch.</label>
-          <br>
-          <input class="answer" type="radio" name="q4" value="1">
-          <label>I can almost keep my heel (closer to the wall) on the ground.</label>
-          <br>
-          <input class="answer" type="radio" name="q4" value="0">
-          <label>I can't keep my heel (closer to the wall) on the ground. At all.</label>
-        </ul>
+      <div class="quizAnswers" id="correctAnswer3"></div>
+      <div><br/><br/>
       </div>
-    </td>
-  </tr>
-  </table>-->
+      <div class="quizAnswers" id="correctAnswer4"></div>
+      <!--show score upon submit-->
+      <div>
+        <h4 class="quizScore" id="userScore"></h4>
+      </div>
 
-  <a class="waves-effect waves-light btn">
-    <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
-           type="submit" value="Submit" />
-  </a>
-
-
-
-  <!--show only wrong answers on submit-->
-  <div class="quizAnswers" id="correctAnswer1"></div>
-  <div class="quizAnswers" id="correctAnswer2"></div>
-  <div class="quizAnswers" id="correctAnswer3"></div>
-  <div class="quizAnswers" id="correctAnswer4"></div>
-  <!--show score upon submit-->
-  <div>
-    <h2 class="quizScore" id="userScore"></h2>
+      <h5 class="moveOn" id="moveOn">Based on your flexibility score, you can add strengthening exercises to your workout.</h5>
+      <div class="waves-effect waves-light btn" id="strengthButton">
+        <input class="quizSubmit"  onClick="location.href = 'LegStrength.html'"
+               type="submit" value="Strength"/>
+      </div>
+    </div>
+    <div><br /></div>
+    <div class="waves-effect waves-light btn">
+      <input class="quizSubmit" id="submitButton" onClick="location.href = 'index.html'"
+             type="submit" value="Back" />
+    </div>
   </div>
-
-  <h3 class="moveOn" id="moveOn">Based on your flexibility score, you can add strengthening exercises to your workout.</h3>
-  <div class="strengthButton">
-    <input class="quizSubmit" id="strengthButton" onClick="location.href = 'LegStrength.html'"
-           type="submit" value="Strength" />
-  </div>
-
-  <div class="submitter">
-    <input class="quizSubmit" id="submitButton" onClick="location.href = 'index.html'"
-           type="submit" value="Back" />
-  </div>
-
 </body>
