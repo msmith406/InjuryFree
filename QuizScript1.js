@@ -189,7 +189,7 @@ function submitQuiz() {
 
 
   // calculate "possible score" integer
-  var questionCountArray = document.getElementsByClassName('question');
+  var questionCountArray = document.getElementsByClassName('card yellow darken-1');
 
   var questionCounter = 0;
   for (var i = 0, length = questionCountArray.length; i < length; i++) {
@@ -223,5 +223,6 @@ $(document).ready(function () {
   $('#submitButton').click(function () {
     $(this).addClass('hide');
   });
-
 });
+
+
