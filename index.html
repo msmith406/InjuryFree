@@ -21,7 +21,7 @@
           <div class="modal-content">
             <h4>I am not a doctor.</h4>
             <p>All information on this site is from my personal experience, including doctor's appointments and physical therapy, and
-              resources I found online. All I've done is compiled this information. I am not taking credit for it being minefor it being right or wrong.
+              resources I found online. All I've done is compiled this information. I am not taking credit for it being mine or for it being right or wrong.
             My only hope is that you find it helpful for your fitness endeavors. I take no responsibility for your success or failure nor your injury or lack thereof.</p>
           </div>
           <div class="modal-footer">
@@ -40,7 +40,11 @@
   <div class="card-panel teal lighten-4">
     <p style="text-align: center;">
     Select a section below to start improving your fitness.<br/><br/>
-      <a class="waves-effect waves-light btn">
+      <a class="waves-effect waves-light btn tooltipped" data-position="top" data-delay="50" data-tooltip="COMING SOON">
+        <input class="quizSubmit" id="submitButton" onClick="location.href = 'index.html'"
+               type="submit" value="Upper Body" />
+      </a>
+	  <a class="waves-effect waves-light btn">
         <input class="quizSubmit" id="submitButton" onClick="location.href = 'Trunk.html'"
                type="submit" value="Abs & Lower Back" />
       </a>
@@ -54,8 +58,8 @@
                type="submit" value="Ribs" />
       </a>
 
-      <a class="waves-effect waves-light btn">
-        <input class="quizSubmit" id="submitButton" onClick="location.href = 'Workouts.html'"
+      <a class="waves-effect waves-light btn tooltipped" data-position="top" data-delay="50" data-tooltip="COMING SOON">
+        <input class="quizSubmit" id="submitButton" onClick="location.href = 'index.html'"
                type="submit" value="Example Workouts" />
       </a>
     </p>
