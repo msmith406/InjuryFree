@@ -1,0 +1,83 @@
+<head>
+  <!-- Compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="menuStuff.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="RibStyle.css">
+  <title>Rib Exercises</title>
+  <style>
+    .nav-wrapper {
+      padding-left: 1rem;
+      padding-right: 2rem;
+      padding-bottom: 0;
+      padding-top: 0 !important;
+    }
+	[type="checkbox"]+label{
+		margin-right:30px;
+	}
+  </style>
+</head>
+
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="index.html" class="brand-logo">InjuryFree</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="LegStretch.html">Legs & Hips</a></li>
+      <li><a href="RibStretch.html">Ribs</a></li>
+      <li><a href="Trunk.html">Abs & Lower Back</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class ="container">
+<form action="#"><br/>
+    <h6>What days do you plan to workout? </h6>
+	<p>
+      <input type="checkbox" id="Sun" />
+      <label for="Sun">Sunday</label>
+	  <input type="checkbox" id="Mon" />
+      <label for="Mon">Monday</label>
+	  <input type="checkbox" id="Tues" />
+      <label for="Tues">Tuesday</label>
+	  <input type="checkbox" id="Wed" />
+      <label for="Wed">Wednesday</label>
+	  <input type="checkbox" id="Thurs" />
+      <label for="Thurs">Thursday</label>
+	  <input type="checkbox" id="Fri" />
+      <label for="Fri">Friday</label>
+	  <input type="checkbox" id="Sat" />
+      <label for="Sat">Saturday</label>
+    </p>
+	
+	<div class="switch"> <br/>Access to a gym? <br/><br/>
+    <label>
+      No
+      <input type="checkbox">
+      <span class="lever"></span>
+      Yes
+    </label>
+  </div><br/>
+  <div class="row">
+  <h6>How many days per week do you expect to lift?</h6>
+  <div class="input-field col s3">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+	  <option value="3">4</option>
+      <option value="3">5</option>
+      <option value="3">6</option>
+
+    </select>
+    <label>Minimum of 1 day per week</label>
+  </div>
+</div>
+  <a class="waves-effect waves-light btn">
+      <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+             type="submit" value="Submit" />
+    </a>
+</form>
+</div>
