@@ -1,0 +1,137 @@
+<head>
+  <!-- Compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="ProcessWorkout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <title>Workouts</title>
+  <style>
+    .nav-wrapper {
+      padding-left: 1rem;
+      padding-right: 2rem;
+      padding-bottom: 0;
+      padding-top: 0 !important;
+    }
+	[type="checkbox"]+label{
+		margin-right:30px;
+	}
+  </style>
+</head>
+
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="index.html" class="brand-logo">InjuryFree</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="LegStretch.html">Legs & Hips</a></li>
+      <li><a href="RibStretch.html">Ribs</a></li>
+      <li><a href="Trunk.html">Abs & Lower Back</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class ="container">
+  <form action="#"><br/>
+
+    <div class="switch"  > <br/>Access to a gym? <br/><br/>
+      <label>
+        No
+        <input type="checkbox"id="switch">
+        <span class="lever"></span>
+        Yes
+      </label>
+    </div><br/>
+    <div class="row">
+      <h6>How many days per week do you expect to lift?</h6>
+      <div class="input-field col s3" >
+        <select id="liftDays">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+
+        </select>
+        <label>Minimum of 1 day per week</label>
+      </div>
+    </div>
+    <div class="row">
+      <h6>How many days per week do you expect to do cardio?</h6>
+      <div class="input-field col s3">
+        <select disabled id="cardioDays">
+          <option value="" disabled selected>Feature Coming Soon</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+
+        </select>
+      </div>
+    </div>
+
+    <h6>What days do you plan to workout? </h6>
+    <p>
+      <input type="checkbox" id="Sunday"/>
+      <label for="Sunday">Sunday</label>
+      <input type="checkbox" id="Monday"/>
+      <label for="Monday">Monday</label>
+      <input type="checkbox" id="Tuesday"/>
+      <label for="Tuesday">Tuesday</label>
+      <input type="checkbox" id="Wednesday"/>
+      <label for="Wednesday">Wednesday</label>
+      <input type="checkbox" id="Thursday"/>
+      <label for="Thursday">Thursday</label>
+      <input type="checkbox" id="Friday"/>
+      <label for="Friday">Friday</label>
+      <input type="checkbox" id="Saturday"/>
+      <label for="Saturday">Saturday</label>
+    </p><br/>
+<h6>If possible you should work all 3 sections every week.</h6>
+	<div class="switch"  > <br/>Upper Body? <br/><br/>
+      <label>
+        No
+        <input type="checkbox"id="upperBody">
+        <span class="lever"></span>
+        Yes
+      </label>
+    </div><br/>
+
+<div class="switch"  > <br/>Legs? <br/><br/>
+      <label>
+        No
+        <input type="checkbox"id="legs">
+        <span class="lever"></span>
+        Yes
+      </label>
+    </div><br/>	
+	
+	<div class="switch"  > <br/>Abs & LowerBack? <br/><br/>
+      <label>
+        No
+        <input type="checkbox"id="trunk">
+        <span class="lever"></span>
+        Yes
+      </label>
+    </div><br/>
+	
+    <a class="waves-effect waves-light btn" id="submitButton" onclick="processWorkout();"
+       value="Submit">Submit
+    </a>
+  </form><br/>
+
+  <div class="container" id="gymAccess"></div>
+  <div class="container" id="numLiftDays"></div>
+  <div class="container" id="numCardioDays"></div>
+  <div class="container" id="greaterThan6"></div>
+  <div class="container" id="daysToWorkout"></div>
+  <div class="container" id="validateNumDays"></div>
+  <div class="container" id="workoutPlan"></div>
+<br/><br/>
+
+
+</div>
