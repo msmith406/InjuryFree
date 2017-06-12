@@ -6,6 +6,44 @@ function processWorkout()
     document.getElementById('gymAccess').innerHTML = "You have access to a gym.";
   }
   else { document.getElementById('gymAccess').innerHTML = "You do not have access to a gym."; }
+  
+  var workLegs=document.getElementById('legs').checked;
+  var workUpper=document.getElementById('upperBody').checked;
+  var workTrunk=document.getElementById('trunk').checked;
+  var sectionArray = [workLegs, workUpper, workTrunk];
+  var numSections = sectionArray.length;
+  if(!workLegs && !workUpper && !workTrunk){
+	document.getElementById('validateSectionChecked').innerHTML = "You must select at least one section of the body.";  
+  }else{
+	  if(document.getElementById('switch').checked){
+		returnGymWorkout(sectionArray);
+	  }
+	  else{
+		returnBwWorkout(sectionArray); 
+	  }
+  }
+}
+
+function returnGymWorkout(sectionArray){
+	if(sectionArray[0] == true){
+		document.getElementById('outLegs').innerHTML = "Weighted Squats"; 
+	}
+	else{
+		document.getElementById('outLegs').innerHTML = "Not Leg Day";
+	}
+	
+}
+
+function returnBwWorkout(sectionArray){
+	if(sectionArray[0]){
+		document.getElementById('outLegs').innerHTML = "BodyWeight squats + lunges."; 
+	}
+	else{
+		document.getElementById('outLegs').innerHTML = "Not Leg Day";
+	}
+	
+}
+  
   // var liftingDays = (document.getElementById('liftDays').value);
   // var cardioDays = (document.getElementById('cardioDays').value);
   // document.getElementById('numLiftDays').innerHTML = "Lifting Days: " + liftingDays;
@@ -83,7 +121,7 @@ function processWorkout()
 		// }
 	// }
 	//document.getElementById('workoutPlan').innerHTML = workoutPlan; 
-}
+// }
 
 
 $(document).ready(function () {
