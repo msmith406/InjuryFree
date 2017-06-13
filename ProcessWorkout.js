@@ -32,23 +32,34 @@ function processWorkout()
 	  }
    }
   
+  var sectionArray =[];
   var whichSections="";
   var workLegs=document.getElementById('legs').checked;
+  if(workLegs){
+	sectionArray.push("workLegs");  
+  }
   var workUpper=document.getElementById('upperBody').checked;
+  if(workUpper){
+	sectionArray.push("workUpper");  
+  }
   var workTrunk=document.getElementById('trunk').checked;
-  var sectionArray = [workLegs, workUpper, workTrunk];
+  if(workTrunk){
+	sectionArray.push("workTrunk");  
+  }
   var numSections = sectionArray.length;
   
-  if(weekDays==1){
-	whichSections+="DayOne: "+liftArray[0]+": ";
-	if(workLegs){
-		whichSections+="workLegs ";
-	}if(workUpper){
-		whichSections+="workUpper ";
-	}if(workTrunk){
-		whichSections+="workTrunk";
+  var oneWorkoutForEachSection = weekDays==numSections;
+  if(oneWorkoutForEachSection){
+	for(var k = 0,  length = numSections; k < length; k++){  
+		whichSections+=" Day "+(k+1)+" : " +liftArray[k]+": "+ sectionArray[k]+" ";
 	}
+  }else if(weekDays==1){
+	whichSections+=" Day 1 : " +liftArray[0]+": ";
+	for(k = 0,  length = numSections; k < length; k++){
+		whichSections+=sectionArray[k]+" ";
+	}	
   }
+  
   
  document.getElementById('workoutPlan').innerHTML = whichSections;
   
