@@ -7,11 +7,21 @@ function processWorkout()
   }
   else { document.getElementById('gymAccess').innerHTML = "You do not have access to a gym."; }
   
+
   var workLegs=document.getElementById('legs').checked;
+  if(workLegs){
+	sectionArray.push("workLegs");  
+  }
   var workUpper=document.getElementById('upperBody').checked;
+  if(workUpper){
+	sectionArray.push("workUpper");  
+  }
   var workTrunk=document.getElementById('trunk').checked;
-  var sectionArray = [workLegs, workUpper, workTrunk];
+  if(workTrunk){
+	sectionArray.push("workTrunk");  
+  }
   var numSections = sectionArray.length;
+
   if(!workLegs && !workUpper && !workTrunk){
 	document.getElementById('validateSectionChecked').innerHTML = "You must select at least one section of the body.";  
   }else{
@@ -44,6 +54,7 @@ function returnBwWorkout(sectionArray){
 	
 }
   
+
   // var liftingDays = (document.getElementById('liftDays').value);
   // var cardioDays = (document.getElementById('cardioDays').value);
   // document.getElementById('numLiftDays').innerHTML = "Lifting Days: " + liftingDays;
