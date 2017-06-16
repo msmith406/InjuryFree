@@ -38,7 +38,7 @@ function submitQuiz() {
     img.onload = function () {
       div.appendChild(img);
     };
-    img.src = 'hamstring.jpg';
+    img.src = 'images/hamstring.jpg';
   }
 
   function hipflexor1()
@@ -48,7 +48,7 @@ function submitQuiz() {
     img.onload = function () {
       div.appendChild(img);
     };
-    img.src = 'hipflexor.png';
+    img.src = 'images/hipflexor.png';
   }
 
   function hipflexor2() {
@@ -57,7 +57,7 @@ function submitQuiz() {
     img.onload = function () {
       div.appendChild(img);
     };
-    img.src = 'hipflexor2.jpg';
+    img.src = 'images/hipflexor2.jpg';
   }
 
   function hipflexor3() {
@@ -66,7 +66,7 @@ function submitQuiz() {
     img.onload = function () {
       div.appendChild(img);
     };
-    img.src = 'FrontHip.jpg';
+    img.src = 'images/FrontHip.jpg';
   }
 
   function hipflexor4() {
@@ -75,7 +75,7 @@ function submitQuiz() {
     img.onload = function () {
       div.appendChild(img);
     };
-    img.src = 'FrontHipKnee.jpg';
+    img.src = 'images/FrontHipKnee.jpg';
   }
 
   function calf1() {
@@ -84,7 +84,7 @@ function submitQuiz() {
     img.onload = function () {
       div.appendChild(img);
     };
-    img.src = 'calf1.jpg';
+    img.src = 'images/calf1.jpg';
   }
 
   function calf2() {
@@ -93,7 +93,7 @@ function submitQuiz() {
     img.onload = function () {
       div.appendChild(img);
     };
-    img.src = 'calf2.jpg';
+    img.src = 'images/calf2.jpg';
   }
 
 
