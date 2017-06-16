@@ -369,7 +369,7 @@ function GetUpperBodyStretchAndIP (){
 function GetProneToHands(){
   var html =[
     '<div class="col s12 m7 deep-purple lighten-2">',
-     ' <h2 class="thin header deep-purple lighten-2">&nbsp;Prone to Hands</h2>',
+     ' <h2 class="thin header deep-purple lighten-2">&nbsp;Stretch: Prone to Hands</h2>',
       '<div class="card horizontal deep-purple lighten-4">',
         '<div class="card-image deep-purple lighten-2">',
           '<img src="proneToHands.jpg">',
@@ -385,7 +385,7 @@ function GetProneToHands(){
             '</p>',
          ' </div>',
           '<div class="card-action deep-purple lighten-5">',
-            '<b><a>Repeat: 1 set of 10 reps, daily</a></b>',
+            '<b><a>Repeat: 1 set of 10 reps</a></b>',
           '</div>',
         '</div>',
       '</div>',
@@ -394,15 +394,87 @@ function GetProneToHands(){
 }
 
 function GetBridge(){
-
+var html =[
+'<div class="col s12 m7 deep-purple lighten-2">',
+      '<h2 class="thin header deep-purple lighten-2">&nbsp;IP: Bridge</h2>',
+      '<div class="card horizontal deep-purple lighten-4">',
+        '<div class="card-image deep-purple lighten-2">',
+          '<img src="bridge.jpg">',
+        '</div>',
+        '<div class="card-stacked">',
+          '<div class="card-content">',
+           ' <p>',
+              '- Lie on your back with your knees bent to 90 degrees<br/>',
+              '- Draw in your abdominals and contract your inner thigh muscles to stabilize your core.<br/>',
+              '- Squeeze your buttocks as you lift your hips off the ground - Lift until your trunk is aligned with your thighs.<br/>',
+              '- Slowly return to initial position and repeat<br/>',
+            '</p>',
+          '</div>',
+          '<div class="card-action deep-purple lighten-5">',
+            '<b><a>Repeat: 2 set of 10 reps, hold 10sec</a></b>',
+          '</div>',
+        '</div>',
+      '</div>',
+    '</div>'
+].join('');
+return html;
 }
 
 function GetPlank(){
-
+var html=[
+'<div class="col s12 m7 deep-purple lighten-2">',
+      '<h2 class="thin header deep-purple lighten-2">&nbsp;Strength: Plank on Elbows</h2>',
+      '<div class="card horizontal deep-purple lighten-4">',
+        '<div class="card-image deep-purple lighten-2">',
+          '<img src="plank.jpg">',
+        '</div>',
+        '<div class="card-stacked">',
+          '<div class="card-content">',
+           ' <p>',
+              '- Lie on your stomach with elbows on the ground at 90 degrees.<br/>',
+              '- Push up from elbows into a plank position.<br/>',
+              '- Keep your back straight and abdominals drawn in.<br/>',
+              '- Maintain the position without arching/sagging the lower back and relax.<br/>',
+              '- Return to start position and repeat.',
+            '</p>',
+          '</div>',
+          '<div class="card-action deep-purple lighten-5">',
+            '<b><a>Repeat: 1 set of 10 reps, hold 20sec</a></b>',
+          '</div>',
+        '</div>',
+      '</div>',
+    '</div>'
+].join('');
+return html;
 }
 
 function GetScissorKicks(){
-  
+  var html = [
+    '<div class="col s12 m7 deep-purple lighten-2">',
+     ' <h2 class="thin header deep-purple lighten-2">&nbsp;Strength: Scissor Kicks</h2>',
+      '<div class="card horizontal deep-purple lighten-4">',
+       ' <div class="card-image deep-purple lighten-2">',
+         ' <img src="scissor.jpg">',
+       ' </div>',
+        '<div class="card-stacked">',
+         ' <div class="card-content">',
+         '   <p>',
+             ' - Lie on your back with your arms placed to the side and your lower back flat against the floor.<br/>',
+              '- Activate your lower abdominals by drawing in your belly button.<br/>',
+              '- Lift your legs about 12 inches off of the floor and spread them apart.<br/>',
+              '- Cross one leg over the other and return to starting position. Repeat by crossing over with the other leg.<br/>',
+             ' - Do not let your lower back come off the ground.<br/>',
+              '- Rest and repeat.',
+           ' </p>',
+         ' </div>',
+         ' <div class="card-action deep-purple lighten-5">',
+            '<b><a>Repeat: 3 sets of 30sec</a></b>',
+          '</div>',
+        '</div>',
+    '  </div>',
+   ' </div>'
+  ].join('');
+  return html;
 }
 
 $(document).ready(function () {
