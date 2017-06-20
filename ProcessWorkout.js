@@ -35,7 +35,7 @@ function returnGymWorkout(sectionArray){
                                                     + GetQuadExtension()); 
 	}
 	if(sectionArray[1] == true){
-		document.getElementById('outUpper').innerHTML = (GetUpperBodyStretchAndIP()); 				
+		document.getElementById('outUpper').innerHTML = (GetUpperBodyStretchAndIP() + GetLatPulldown() + GetFrontDumbellRaise()); 				
 	}
 	if(sectionArray[2] == true){
 		document.getElementById('outTrunk').innerHTML = (GetProneToHands() + GetRussianTwists() + GetDeadlifts() + GetTrunkLifts()
@@ -664,6 +664,58 @@ function GetUpperBodyStretchAndIP (){
      ' </div>',
     '</div>'].join('');
 	return html1+html2; 
+}
+function GetLatPulldown (){
+  var html1 = ['<div class="col s12 m7 lime">',
+      '<h2 class="thin header lime">&nbsp;Strength: Wide Grip Lat Pulldown</h2>',
+      '<div class="card horizontal lime lighten-3">',
+        '<div class="card-image lime">',
+        '<a href="https://youtu.be/WMast6wAGFw">',
+          '<img src="images/wideGrip.jpg">',
+		    '</a>',       
+        ' </div>',
+       ' <div class="card-stacked">',
+          '<div class="card-content">',
+          '  <p>',
+            '  - Sit on a bench facing an adjustable cable machine with a lat pulldown bar positioned on a high setting. <br/>',
+            '  - With your back straight, grab the bar with an overhand grip, your arms fully extended and your hands about twice shoulder-width apart. <br/>',
+             ' - Pull your shoulder blades down and back, bringing the bar to your chest. <br/>',
+             ' - Pause and then return to the starting position.<br/>',
+           ' </p>',
+         ' </div>',
+          '<div class="card-action lime lighten-5">',
+           ' <b><a>Repeat: 4 sets of 15 reps, each side</a></b>',
+         '</div>',
+        '</div>',
+     ' </div>',
+    '</div>'].join('');
+	return html1; 
+}
+function GetFrontDumbellRaise (){
+  var html1 = ['<div class="col s12 m7 lime">',
+      '<h2 class="thin header lime">&nbsp;Strength: Front Dumbell Raise</h2>',
+      '<div class="card horizontal lime lighten-3">',
+        '<div class="card-image lime">',
+        '<a href="https://youtu.be/-t7fuZ0KhDA">',
+          '<img src="images/frontDumbell.jpg">',
+		    '</a>',       
+        ' </div>',
+       ' <div class="card-stacked">',
+          '<div class="card-content">',
+          '  <p>',
+            '  - Stand tall with your feet hip-width apart.  <br/>',
+            '  - Hold a dumbbell in each hand in front of your thighs. Your palms should face toward you. <br/>',
+             ' - Raise your arms up in front of you. Pause when the dumbbells reach shoulder height.<br/>',
+             ' - Then slowly return the weights to the starting position.<br/>',
+           ' </p>',
+         ' </div>',
+          '<div class="card-action lime lighten-5">',
+           ' <b><a>Repeat: 4 sets of 12 reps, each side</a></b>',
+         '</div>',
+        '</div>',
+     ' </div>',
+    '</div>'].join('');
+	return html1; 
 }
 
 $(document).ready(function () {
