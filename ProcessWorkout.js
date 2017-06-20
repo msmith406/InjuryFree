@@ -35,10 +35,11 @@ function returnGymWorkout(sectionArray){
                                                     + GetQuadExtension()); 
 	}
 	if(sectionArray[1] == true){
-		document.getElementById('outUpper').innerHTML = "Lat Pulldowns"; 				
+		document.getElementById('outUpper').innerHTML = (GetUpperBodyStretchAndIP()); 				
 	}
 	if(sectionArray[2] == true){
-		document.getElementById('outTrunk').innerHTML = "Weighted Trunk Lifts"; 				
+		document.getElementById('outTrunk').innerHTML = (GetProneToHands() + GetRussianTwists() + GetDeadlifts() + GetTrunkLifts()
+                                                    + GetHangingLegRaises()); 				
 	}
 	
 }
@@ -475,6 +476,194 @@ function GetScissorKicks(){
    ' </div>'
   ].join('');
   return html;
+}
+
+function GetDeadlifts(){
+  var html = [
+    '<div class="col s12 m7 deep-purple lighten-2">',
+     ' <h2 class="thin header deep-purple lighten-2">&nbsp;Strength: Deadlifts</h2>',
+      '<div class="card horizontal deep-purple lighten-4">',
+       ' <div class="card-image deep-purple lighten-2">',
+         '<a href="https://youtu.be/GswXYjZf-0w">',
+          '<img src="images/deadlift.jpg">',
+		  '</a>',
+       ' </div>',
+        '<div class="card-stacked">',
+         ' <div class="card-content">',
+         '   <p>',
+             '<a href="https://www.bodybuilding.com/fun/how-to-deadlift-beginners-guide.html">',
+          'Deadlifts are vital but pretty easy to mess up. So read this article for insructions.',
+		  '</a> ',
+           ' </p>',
+         ' </div>',
+         ' <div class="card-action deep-purple lighten-5">',
+            '<b><a>Repeat: 4 sets of 15 reps</a></b>',
+          '</div>',
+        '</div>',
+    '  </div>',
+   ' </div>'
+  ].join('');
+  return html;
+}
+
+function GetTrunkLifts(){
+  var html = [
+    '<div class="col s12 m7 deep-purple lighten-2">',
+     ' <h2 class="thin header deep-purple lighten-2">&nbsp;Strength: Trunk Lifts</h2>',
+      '<div class="card horizontal deep-purple lighten-4">',
+       ' <div class="card-image deep-purple lighten-2">',
+         '<a href="https://youtu.be/PiStNv2qxKc">',
+          '<img src="images/trunkLift.jpg">',
+		  '</a>',
+       ' </div>',
+        '<div class="card-stacked">',
+         ' <div class="card-content">',
+         '   <p>',
+             ' - Find the exercise bench pictured to the left. If your gym does not have this, use a large exercise ball.<br/>',
+              '- Adjust the height of the machine so that your hips rest just above the padding.<br/>',
+              '- Select appropriate weight and place it behind your head, holding it on your back/shoulders.<br/>',
+              '- With the weight held against your back, lean forward, hinging at the hips.<br/>',
+              '- Stop when your body makes a 90 degree angle, pause, then slowly return to the starting position<br/>',
+              '- Rest and repeat.',
+           ' </p>',
+         ' </div>',
+         ' <div class="card-action deep-purple lighten-5">',
+            '<b><a>Repeat: 4 sets of 15 reps</a></b>',
+          '</div>',
+        '</div>',
+    '  </div>',
+   ' </div>'
+  ].join('');
+  return html;
+}
+function GetHangingLegRaises(){
+  var html = [
+    '<div class="col s12 m7 deep-purple lighten-2">',
+     ' <h2 class="thin header deep-purple lighten-2">&nbsp;Strength: Hanging Leg Raises</h2>',
+      '<div class="card horizontal deep-purple lighten-4">',
+       ' <div class="card-image deep-purple lighten-2">',
+         '<a href="https://youtu.be/kYisFIRohz4">',
+          '<img src="images/hangingLegRaise.jpg">',
+		  '</a>',
+       ' </div>',
+        '<div class="card-stacked">',
+         ' <div class="card-content">',
+         '   <p>',
+             ' - Using a vertical bench, keep your upper back against the bench place your elbows and arms on the side pads.<br/>',
+              '- The legs should be straight down with the pelvis rolled slightly backwards. This will be your starting position.<br/>',
+              '- Raise your legs until the torso makes a 90-degree angle with the legs. Exhale as you perform this movement and hold the contraction for a second or so.<br/>',
+              '- Go back slowly to the starting position as you breathe in.<br/>',
+              '- Rest and repeat.',
+           ' </p>',
+         ' </div>',
+         ' <div class="card-action deep-purple lighten-5">',
+            '<b><a>Repeat: 4 sets of 15 reps</a></b>',
+          '</div>',
+        '</div>',
+    '  </div>',
+   ' </div>'
+  ].join('');
+  return html;
+}
+function GetRussianTwists(){
+  var html = [
+    '<div class="col s12 m7 deep-purple lighten-2">',
+     ' <h2 class="thin header deep-purple lighten-2">&nbsp;IP: Russian Twists</h2>',
+      '<div class="card horizontal deep-purple lighten-4">',
+       ' <div class="card-image deep-purple lighten-2">',
+         ' <img src="images/russianTwists.jpg">',
+       ' </div>',
+        '<div class="card-stacked">',
+         ' <div class="card-content">',
+         '   <p>',
+             ' - Lie down on the floor placing your feet either under something that will not move or by having ',
+             'a partner hold them. Your legs should be bent at the knees.<br/>',
+              '- Elevate your upper body so that it creates an imaginary V-shape with your thighs.<br/>',
+              '- Twist your torso to the right side until your arms are parallel with the floor while breathing out.<br/>',
+              '- Hold the contraction for a second and move back to the starting position while breathing out.<br/>',
+             ' - Now move to the opposite side performing the same techniques you applied to the right side.<br/>',
+              '- Repeat.',
+           ' </p>',
+         ' </div>',
+         ' <div class="card-action deep-purple lighten-5">',
+            '<b><a>Repeat: 4 sets of 20 reps</a></b>',
+          '</div>',
+        '</div>',
+    '  </div>',
+   ' </div>'
+  ].join('');
+  return html;
+}
+function GetProneToHands(){
+  var html =[
+    '<div class="col s12 m7 deep-purple lighten-2">',
+     ' <h2 class="thin header deep-purple lighten-2">&nbsp;Stretch: Prone to Hands</h2>',
+      '<div class="card horizontal deep-purple lighten-4">',
+        '<div class="card-image deep-purple lighten-2">',
+          '<img src="images/proneToHands.jpg">',
+        '</div>',
+        '<div class="card-stacked">',
+          '<div class="card-content">',
+            '<p>',
+              '- Start position: Lay on your stomach with hands flat on the floor<br/>',
+              '- Lift your upper body slowly leaving your hips on the floor with your lower body relaxed. As you lift inhale.<br/>',
+              '- Press up until your elbows are straight.<br/>',
+              '- Hold this position and exhale.<br/>',
+              '- Slowly return to the start position.<br/>',
+            '</p>',
+         ' </div>',
+          '<div class="card-action deep-purple lighten-5">',
+            '<b><a>Repeat: 1 set of 10 reps</a></b>',
+          '</div>',
+        '</div>',
+      '</div>',
+    '</div>',].join('');
+    return html;
+}
+
+function GetUpperBodyStretchAndIP (){
+  var html1 = ['<div class="col s12 m7 lime">',
+      '<h2 class="thin header lime">&nbsp;Stretch: Posterior Deltoid</h2>',
+      '<div class="card horizontal lime lighten-3">',
+        '<div class="card-image lime">',
+         ' <img src="images/posteriorDeltoid.PNG">',
+       ' </div>',
+       ' <div class="card-stacked">',
+          '<div class="card-content">',
+          '  <p>',
+            '  - Stand on one side of a wall and place the arm that is being stretched across your body. <br/>',
+            '  - Grip onto the side of the wall, and look slightly away towards the side being stretched. <br/>',
+             ' - Stretch should be felt behind the shoulder and scapula (shoulder blade).<br/>',
+             ' - Hold for 20-30 sec.<br/>',
+           ' </p>',
+         ' </div>',
+          '<div class="card-action lime lighten-5">',
+           ' <b><a>Repeat: 1 sets of 3-5 reps, each side</a></b>',
+         '</div>',
+        '</div>',
+     ' </div>',
+    '</div>'].join('');
+	var html2 = ['<div class="col s12 m7 lime">',
+      '<h2 class="thin header lime">&nbsp;IP: Plank Position Box Steps</h2>',
+      '<div class="card horizontal lime lighten-3">',
+        '<div class="card-image lime">',
+          '<img src="images/box1.PNG">',
+        '</div>',
+        '<div class="card-stacked">',
+          '<div class="card-content">',
+            '<p>- In a good plank position (this can be done on knees or toes depending on ability), ',
+            'alternate right and left arm stepping onto box while maintaining proper alignment during entire exercise.<br/>',
+             ' - For more variety, start on one side of the box in a good plank position, and step right arm followed by ',
+             'left arm onto the box, and move towards the other side of the box<br/>',
+            '</p>',
+          '</div>',
+         ' <div class="card-action lime lighten-5">',
+          '  <b><a>Repeat: 2 sets of 10 reps</a></b>',
+          '</div>',
+       ' </div>',
+     ' </div>',
+    '</div>'].join('');
+	return html1+html2; 
 }
 
 $(document).ready(function () {
