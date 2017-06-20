@@ -513,7 +513,7 @@ function GetTrunkLifts(){
       '<div class="card horizontal deep-purple lighten-4">',
        ' <div class="card-image deep-purple lighten-2">',
          '<a href="https://youtu.be/PiStNv2qxKc">',
-          '<img src="images/trunkLift.jpg">',
+          '<img src="images/trunklift.jpg">',
 		  '</a>',
        ' </div>',
         '<div class="card-stacked">',
